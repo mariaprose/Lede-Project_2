@@ -13,7 +13,9 @@ st.set_page_config(
     layout="wide",
     initial_sidebar_state="expanded",
     menu_items={
-
+        # 'Get Help': 'https://www.extremelycoolapp.com/help',
+        # 'Report a bug': "https://www.extremelycoolapp.com/bug",
+        # 'About': "# This is a header. This is an *extremely* cool app!"
     }
 )
 
@@ -378,4 +380,33 @@ else:
 
             st.write("PAs by Parent country")
             return_parentiso_rows
+
+
+
+
+    # search_terms
+
+#     return_status_rows = status_area.loc[status_area['Country'].isin(search_terms)]
+#     return_gov_rows = gov_area.loc[gov_area['Country'].isin(search_terms)]
+#     return_owner_rows = owner_area.loc[owner_area['Country'].isin(search_terms)]
+#     # return_IUCN_rows = IUCN_area.loc[IUCN_area['Country'] == search_term]
+#     # return_verif_rows = verif_area.loc[verif_area['Country'] == search_term]
+#     # return_parentiso_rows = parentiso_area.loc[parentiso_area['Country'] == search_term]
+
+# col1, col2, col3, col4 = st.columns([3, 3, 3, 1])
+
+# with col1:
+#     st.write("Results for [country 1]")
+#     return_status_rows
+
+# with col2:
+#     st.write("Results for country 2")
+#     return_gov_rows
+
+# with col3:
+#     st.write("Results for country 3")
+#     return_owner_rows
+#     # return_IUCN_rows
+#     # return_verif_rows
+#     # return_parentiso_rows
 
